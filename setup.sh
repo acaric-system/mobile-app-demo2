@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# mobile-app-demo1 setup script
+# mobile-app-demo2 setup script
 #
 
 usage() {
@@ -12,7 +12,7 @@ usage() {
 
 ## parameter settings
 _BASE_DIR=$(cd $(dirname $0); pwd)
-_APP_DIR=mobile-app-demo-1
+_APP_DIR=mobile-app-demo-2
 _WEBAPP_URL='https://enterprise.acaric.com/MobileHelloWorld/'
 
 while getopts "d:hw:" OPT
@@ -73,4 +73,4 @@ done
 
 
 echo ''
-echo 'mobile-app-demo1 setup success! (^ - ^)'
+echo 'mobile-app-demo2 setup success! (^ - ^)'
