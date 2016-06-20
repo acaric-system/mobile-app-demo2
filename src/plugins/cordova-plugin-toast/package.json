@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-toast",
+  "version": "1.0.0",
+  "description": "Cordova Toast Plugin",
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "toast",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [],
+  "author": "Acaric.co.ltd",
+  "license": "Apache 2.0"
+}
