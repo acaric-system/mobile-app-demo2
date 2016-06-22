@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.acaric.prototype.ToastPlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>Toast</name>
+	<js-module name="cordova-plugin-toast" src="www/cordova-plugin-toast.js">
+		<clobbers target="cordova.plugins.cordova-plugin-toast" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="ToastPlugin">
+				<param name="android-package" value="com.acaric.prototype.ToastPlugin" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+		</config-file>
+		<source-file src="src/android/ToastPlugin.java" target-dir="src/com/acaric/prototype" />
+	</platform>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="ToastPlugin">
+				<param name="ios-package" value="ToastPlugin" />
+			</feature>
+		</config-file>
+		<header-file src="src/ios/ToastPlugin.h" />
+		<source-file src="src/ios/ToastPlugin.m" />
+	</platform>
+</plugin>
